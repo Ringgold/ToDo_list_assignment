@@ -57,7 +57,7 @@ const TodoList: React.FC = () => {
                 onChange={() => toggleTaskCompletion(task.id)}
             />
             <label htmlFor={`task-${task.id}`}></label>
-            {task.text}
+            <div className="taskText">{task.text}</div>
             <button onClick={() => deleteTask(task.id)}>🗑️</button>
           </li>
         ))}

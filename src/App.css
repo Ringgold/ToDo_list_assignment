@@ -48,10 +48,12 @@ body {
 
 input[type="text"] {
   padding: 10px;
-  font-size: 16px;
+  font-size: 25px;
+  width: 300px;
+  height: 25px;
   border: none;
   border-radius: 4px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 ul {
@@ -73,6 +75,11 @@ li input[type="checkbox"] {
   margin-right: 10px;
 }
 
+/* TaskText */
+.taskText {
+  font-size: 28px;
+}
+
 /* BUTTON */
 
 button {
@@ -83,8 +90,8 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 17px;
-  margin: 4px 2px;
+  font-size: 20px;
+  margin: 4px 10px;
   cursor: pointer;
   border-radius: 4px;
 }
