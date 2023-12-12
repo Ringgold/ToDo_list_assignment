@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +42,104 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* INPUT */
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* BUTTON */
+
+button {
+  background-color: #1782e0;
+  border: none;
+  color: white;
+  padding: 9px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 17px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #dfefe0;
+}
+
+/* Error Message */
+.errorMessage {
+  color: red;
+}
+
+/* CHECKBOX */
+
+/* Hide the default checkbox */
+.checkbox-custom {
+  display: none;
+}
+
+/* Style the label, which will be used as the custom checkbox */
+.checkbox-custom + label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  color: #333;
+}
+
+/* Style for the box in the custom checkbox */
+.checkbox-custom + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #555;
+  background-color: #fff;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
+
+/* Style when the custom checkbox is checked */
+.checkbox-custom:checked + label:before {
+  background-color: #4CAF50;
+}
+
+/* Adding a checkmark when the checkbox is checked */
+.checkbox-custom:checked + label:after {
+  content: '✔';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  font-size: 18px;
+  color: white;
+  transform: translateY(-50%);
 }
